@@ -1,0 +1,24 @@
+.about__title{
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:var(--dark-text-color);
+    margin-bottom: 10px;
+    }
+    
+    .about-list{
+        --card-item: 4;
+        
+    }
+    
+  
+    
+    .about-list__img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--gray-background-color);
+        height: 120px;
+        margin-bottom: 30px;
+    }

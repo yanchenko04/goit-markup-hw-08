@@ -1,0 +1,23 @@
+
+.clients-list{
+--card-item: 6;
+}
+
+
+.clients-list__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-background-color);
+    height: 92px;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    color:var(--icon-color);
+    transition: color var(--transition);
+    &:hover, &:focus{
+        color: var(--accent-color);
+    }
+}
+.clients-list__icon{
+    fill:currentColor
+}
