@@ -46,6 +46,11 @@ box-shadow var(--transition);
 
     
 }
+.portfolio-list{
+    margin-left: 0;
+    margin-top: 0;
+}
+
 .portfolio-list__link{
     display: flex;
     flex-direction: column;
@@ -60,7 +65,13 @@ box-shadow var(--transition);
     &:hover .portfolio-list__hidden-text {
         transform: translateY(0);
     }
+    
 
+}
+.portfolio-list{
+    --card-item: 1;
+    align-items: center;
+    
 }
 
 

@@ -993,6 +993,11 @@ body {
   padding-right: 24px;
 }
 
+.portfolio-list {
+  margin-left: 0;
+  margin-top: 0;
+}
+
 .portfolio-list__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1016,6 +1021,13 @@ body {
 .portfolio-list__link:hover .portfolio-list__hidden-text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.portfolio-list {
+  --card-item: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .portfolio-list__project-name {
