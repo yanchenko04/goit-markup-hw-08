@@ -405,7 +405,7 @@ body {
 .logo {
   font-family: Raleway;
   font-weight: bold;
-  font-size: 24;
+  font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--logo-color);
@@ -413,7 +413,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .logo {
-    font-style: 26px;
+    font-size: 26px;
     line-height: 1.19;
   }
 }
@@ -762,6 +762,15 @@ body {
           align-items: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .footer-cont__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -776,8 +785,32 @@ body {
           align-items: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-cont__item {
+    margin-bottom: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-cont__item:not(:last-child) {
+    margin-right: 70px;
+  }
+  .footer-cont__item:last-child {
+    margin-left: auto;
+  }
+}
+
 .footer .logo {
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .logo {
+    text-align: left;
+  }
 }
 
 .footer__logo {
@@ -786,6 +819,12 @@ body {
 
 .footer-list {
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-list {
+    text-align: left;
+  }
 }
 
 .footer-list__item:not(:last-child) {
@@ -834,6 +873,15 @@ body {
           align-items: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .mailing-form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .mailing-form__input {
   width: 450px;
   height: 50px;
@@ -877,6 +925,14 @@ body {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 1200px) {
+  .mailing-form__input {
+    width: 375px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 }
 
 .mailing-form__button {
