@@ -1,13 +1,21 @@
 .work{
-    padding-top: 0;
+    display: none;
+    @include desk{
+        display: flex;
+        padding-top: 0;
+    }
 }
 
 
 
 .work-list__content{
-    position: relative;
+    @include desk{
+        position: relative;
+    }
+    
 }
 .work-list__text{
+    @include desk{
     position: absolute;
     width: 100%;
     background-color:  rgba(47, 48, 58, 0.8);
@@ -17,4 +25,5 @@
     text-align: center;
     text-transform: uppercase;
     color: var(--light-text-color);
+    }
 }

@@ -49,7 +49,7 @@
         </div>
     </section>
     <!--О нас-->
-    <!-- <section class="about section">
+   <section class="about section">
         <div class="container">
         <ul class="list about-list card-set">
             <li class="about-list__item item">
@@ -92,13 +92,22 @@
         </div>
     </section>
     <!--Чем занимаемся-->
-    <!-- <section class="work section"> 
+    <section class="work section"> 
         <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="list work-list card-set">
             <li class="work-list__item item">
                 <div class="work-list__content">
-                <img src="./images/about_section_img_1.jpg" alt="Написание кода" width="370" height="294">
+                <picture>
+                    <source
+                    srcset="
+                    ././images/about_section_img_1.jpg 1x,
+                    ./images/about_section_img_1_2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./images/about_section_img_1.jpg" alt="Написание кода" >
+                  </picture>
                <h3 class="work-list__text">
                 Десктопные приложения
                </h3>
@@ -106,7 +115,17 @@
             </li>
             <li class="work-list__item item">
                 <div class="work-list__content">
-                <img src="./images/about_section_img_2.jpg" alt="Разробка мобильного приложения" width="370" height="294">
+                    <picture>
+                        <source
+                        srcset="
+                        ././images/about_section_img_2.jpg 1x,
+                        ./images/about_section_img_2_2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <img src="./images/about_section_img_2.jpg" alt="Разробка мобильного приложения" >
+                      </picture>
+               
                 <h3 class="work-list__text">
                     Мобильные приложения
                    </h3>
@@ -114,7 +133,16 @@
             </li>
             <li class="work-list__item item">
                 <div class="work-list__content">
-                <img src="./images/about_section_img_3.jpg" alt="Выбор цветовой палитры" width="370" height="294">
+                    <picture>
+                        <source
+                        srcset="
+                        ././images/about_section_img_3.jpg 1x,
+                        ./images/about_section_img_3_2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <img src="./images/about_section_img_3.jpg" alt="Выбор цветовой палитры">
+                
                 <h3 class="work-list__text">
                     Дизайнерские решения
                    </h3>
@@ -122,14 +150,38 @@
             </li>
         </ul>
         </div>
-    </section> -->
+    </section> 
     <!--Команда-->
-    <!-- <section class="team section"> 
+    <section class="team section"> 
         <div class="container">
         <h2 class="section-title">Наша команда</h2>
         <ul class="list team-list card-set">
             <li class="team-list__item item">
-                <img src="./images/team_img_1.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                <picture>
+                    <source
+                      srcset="
+                        ././images/team_img_1_mob_1x.jpg 1x,
+                        ./images/team_img_1_mob_2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <source
+                      srcset="
+                      ././images/team_img_1_tab_1x.jpg 1x,
+                      ./images/team_img_1_tab_2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                    srcset="
+                    ././images/team_img_1.jpg 1x,
+                    ./images/team_img_1_2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./images/team_img_1.jpg" alt="Игорь Демьяненко">
+                  </picture>
+                
                 <div class="team-list__content">
                 <h3 class="team-list__people">Игорь Демьяненко</h3>
                 <p class="team-list__position">Product Designer</p>
@@ -171,7 +223,31 @@
                 </div>
             </li>
             <li class="team-list__item item">
-                <img src="./images/team_img_2.jpg" alt="Ольга Репина" width="270" height="260">
+                <picture>
+                    <source
+                      srcset="
+                        ././images/team_img_2_mob_1x.jpg 1x,
+                        ./images/team_img_2_mob_2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <source
+                      srcset="
+                      ././images/team_img_2_tab_1x.jpg 1x,
+                      ./images/team_img_2_tab_2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                    srcset="
+                    ././images/team_img_2.jpg 1x,
+                    ./images/team_img_2_2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./images/team_img_2.jpg" alt="Ольга Репина" >
+                  </picture>
+                
                 <div class="team-list__content">
                 <h3 class="team-list__people">Ольга Репина</h3>
                 <p class="team-list__position">Frontend Developer</p>
@@ -212,7 +288,31 @@
                 </div>
             </li>
             <li class="team-list__item item">
-                <img src="./images/team_img_3.jpg" alt="Николай Тарасов" width="270" height="260">
+                <picture>
+                    <source
+                      srcset="
+                        ././images/team_img_3_mob_1x.jpg 1x,
+                        ./images/team_img_3_mob_2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <source
+                      srcset="
+                      ././images/team_img_3_tab_1x.jpg 1x,
+                      ./images/team_img_3_tab_2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                    srcset="
+                    ././images/team_img_3.jpg 1x,
+                    ./images/team_img_3_2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./images/team_img_3.jpg" alt="Николай Тарасов" >
+                  </picture>
+               
                 <div class="team-list__content">
                 <h3 class="team-list__people">Николай Тарасов</h3>
                 <p class="team-list__position">Marketing</p>
@@ -253,7 +353,31 @@
                 </div>
             </li>
             <li class="team-list__item item">
-                <img src="./images/team_img_4.jpg" alt="Михаил Ермаков" width="270" height="260">
+                <picture>
+                    <source
+                      srcset="
+                        ././images/team_img_4_mob_1x.jpg 1x,
+                        ./images/team_img_4_mob_2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <source
+                      srcset="
+                      ././images/team_img_4_tab_1x.jpg 1x,
+                      ./images/team_img_4_tab_2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                    srcset="
+                    ././images/team_img_4.jpg 1x,
+                    ./images/team_img_4_2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./images/team_img_4.jpg" alt="Михаил Ермаков">
+                  </picture>
+               
                 <div class="team-list__content">
                 <h3 class="team-list__people">Михаил Ермаков</h3>
                 <p class="team-list__position">UI Designer</p>
@@ -295,7 +419,8 @@
                 </li>
                 </ul>
         </div>
-    </section> -->
+    </section>
+    <!-- Clients -->
     <!-- <section class="clients section"> 
         <div class="container">
         <h2 class="section-title">Постоянные клиенты</h2>
@@ -351,7 +476,7 @@
             
         </ul>
         </div>
-    </section> --> -->
+    </section>  -->
 </main>
 
 <!-- <footer class="footer">

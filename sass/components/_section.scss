@@ -1,11 +1,16 @@
 .section{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .section-title{
-    font-size: 36px;
-    line-height: 1.16;
+    
+    font-size: 28px;
+    line-height: (33 / 28);
     color:var(--dark-text-color);
     margin-bottom: 50px;
     text-align: center;
+    @include desk{
+    font-size: 36px;
+    line-height: 1.16;
     }
+}

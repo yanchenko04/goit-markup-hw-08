@@ -5,10 +5,20 @@
     text-transform: uppercase;
     color:var(--dark-text-color);
     margin-bottom: 10px;
+    text-align: center;
+    @include tab{
+        text-align: left;
+    }
     }
     
     .about-list{
-        --card-item: 4;
+        --card-item: 1;
+        @include tab{
+            --card-item: 2;
+        }
+        @include desk{
+            --card-item: 4;
+        }
         
     }
     

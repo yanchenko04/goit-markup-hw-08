@@ -2,7 +2,13 @@
     background-color: var(--gray-background-color);
 }
 .team-list{
-  --card-item: 4;
+  --card-item: 1;
+  @include tab{
+    --card-item: 2;
+  }
+  @include desk{
+    --card-item: 4;
+  }
 }
 
 
