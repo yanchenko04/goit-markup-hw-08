@@ -1,10 +1,22 @@
 .filter-list{
     display: flex;
-    justify-content: center;
     margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    @include tab{
+    justify-content: center;
+    }
+
 }
 .filter-list__item:not(:last-child){
     margin-right: 8px;
+}
+.filter-list__item{
+    margin-bottom: 15px;
+    @include tab{
+    margin-bottom: 0;
+    }
+    
 }
 
 .filter-list__button{
@@ -47,9 +59,17 @@ box-shadow var(--transition);
     
 }
 .portfolio-list{
-    margin-left: 0;
-    margin-top: 0;
+   
+    --card-item: 1;
+    @include tab{
+        --card-item: 2;
+    }
+    @include desk{
+        --card-item: 3;
+    }
+    
 }
+
 
 .portfolio-list__link{
     display: flex;
@@ -66,11 +86,6 @@ box-shadow var(--transition);
         transform: translateY(0);
     }
     
-
-}
-.portfolio-list{
-    --card-item: 1;
-    align-items: center;
     
 }
 

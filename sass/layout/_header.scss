@@ -15,6 +15,9 @@
 .header__logo{
 color:var(--dark-text-color)
 }
+.site-nav{
+    display: none;
+}
 .site-list{
     color:var(--dark-text-color);
     display: flex;
@@ -24,6 +27,7 @@ color:var(--dark-text-color)
 display: flex;
 margin-left: auto;
 align-items: center;
+display: none;
 }
 .site-list__item:not(:last-child){
     margin-right: 50px;

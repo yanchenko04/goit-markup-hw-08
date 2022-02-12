@@ -14,14 +14,20 @@
 .modal{
     position: absolute;
     background-color:var(--light-background-color);
-    width: 528px;
-    min-height: 581px;
+    // width: 528px;
+    // min-height: 581px;
+    width: 450px;
+    height: 609px;
     padding: 40px;
     top: 50%;
     left: 50%;
     border-radius: 4px;
     transition: transform 250ms linear;
     transform: translate(-50%,-50%); 
+    @include desk{
+        width: 528px;
+        min-height: 581px;
+    }
 } 
 .modal-close{
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -51,12 +57,16 @@
 .modal-title{
 font-weight: bold;
 font-size: 20px;
-line-height: 1.15;
+line-height: 1.5;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--dark-text-color);
 margin-bottom: 12px;
+@include desk{
+    line-height: (23 / 20);
 }
+}
+
 .form-field{
     margin-bottom: 10px;
 }
@@ -138,6 +148,8 @@ margin-bottom: 12px;
      margin-bottom: 30px;
  }
  .check-text{
+     font-size: 12px;
+     line-height: (14 / 12);
     letter-spacing: 0.03em;
     color: var(--text-color);
     display: flex;
@@ -145,6 +157,10 @@ margin-bottom: 12px;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    @include desk{
+        font-size: 14px;
+        line-height: (24 / 14);
+    }
  }
 
  .check-text .check-custom{

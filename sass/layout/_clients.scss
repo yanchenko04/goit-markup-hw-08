@@ -1,6 +1,12 @@
 
 .clients-list{
---card-item: 6;
+--card-item: 2;
+@include tab{
+    --card-item: 3;
+}
+@include desk{
+    --card-item: 6;
+}
 }
 
 
