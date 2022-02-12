@@ -9,6 +9,7 @@
     align-items: baseline;
     flex-direction: column;
     align-items: center;
+ 
     @include desk{
         flex-direction: row;
     }
