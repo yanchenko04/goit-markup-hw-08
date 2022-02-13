@@ -2,42 +2,78 @@
     background-color: var(--dark-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    @include not-desk{
+        text-align: center;
+    }
     
 }
 .footer__container{
     display: flex;
     align-items: baseline;
     flex-direction: column;
-    align-items: center;
  
     @include desk{
         flex-direction: row;
     }
 }
 
-
+.footer__cont-wrapper{
+    
+    @include not-desk{
+        margin-bottom: 60px;
+        width: 100%;
+    }
+    @include tab{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    @include desk{
+        margin-right: 70px;
+    }
+}
 
 .footer-cont__item{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 60px;
-    align-items: center;
+    @include tel-only{
+        &:not(:last-child){
+            margin-bottom: 60px;
+        }
+    }
+    @include not-desk{
+        width: 100%;
+    }
     @include desk{
-        margin-bottom: 0;
-        align-items: flex-start;
+        &:not(:last-child){
+            margin-right: 70px;
+        } 
+        &:last-child{
+            margin-left: auto;
+        }
     }
     
 }
-@media screen and (min-width: 1200px) {
-    .footer-cont__item:not(:last-child){
-    margin-right: 70px;
-}
-.footer-cont__item:last-child{
-    margin-left: auto;
-}
-  }
+
+//     display: flex;
+//     flex-direction: column;
+//     margin-bottom: 60px;
+//     align-items: center;
+//     @include desk{
+//         margin-bottom: 0;
+//         align-items: flex-start;
+//     }
+    
+// }
+// @media screen and (min-width: 1200px) {
+//     .footer-cont__item:not(:last-child){
+//     margin-right: 70px;
+// }
+// .footer-cont__item:last-child{
+//     margin-left: auto;
+// }
+//   }
 
 .footer .logo{
+    display: block;
     margin-bottom: 20px;
     @include desk{
         text-align: left;
@@ -98,7 +134,8 @@ transition: color var(--transition);
 }
 
 .mailing-form__input{
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: transparent;

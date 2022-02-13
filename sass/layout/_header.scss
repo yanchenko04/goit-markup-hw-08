@@ -1,5 +1,9 @@
 .header{
     border-bottom: 1px solid #ECECEC;
+    @include tel-only{
+        padding-top: 16px;
+    padding-bottom: 16px;
+    }
 }
 
 .header .logo{
@@ -9,6 +13,7 @@
 
 .header__container{
     display: flex;
+    align-items: center;
    
 }
    
@@ -28,13 +33,19 @@ color:var(--dark-text-color)
 }
 .contact-list{
 display: none;
-@include tab{
- display: flex;
-margin-left: auto;
-align-items: center;
-flex-direction: column;
-
-}
+    @include tab{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    }
+    @include tab-only{
+        flex-direction: column;
+            .site-list__link{
+            font-size: 12px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
 }
 
 
@@ -46,7 +57,7 @@ flex-direction: column;
         margin-left: 50px;
   }
   .contact-list__item{
-    ont-size: 12px;
+    font-size: 12px;
     line-height: (14 / 12);
     letter-spacing: 0.02em;
   }
@@ -104,14 +115,36 @@ transition: color var(--transition);
         display: none;
     }
 }
+.open-btn-menu.is-open{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 2;
+}
+.open-btn-menu[aria-expanded="false"] .open-menu__icon{
+    display: block;
+}
+.open-btn-menu[aria-expanded="false"] .close-menu__icon{
+    display: none;
+}
+.open-btn-menu[aria-expanded="true"] .close-menu__icon{
+    display: block;
+}
+.open-btn-menu[aria-expanded="true"] .open-menu__icon{
+    display: none;
+}
+
+
 .mob-menu{
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
     position: fixed;
     background-color: var(--light-background-color);
     top: 0;
     left: 0;
     width: 100vw;
     height: 100%;
-    z-index: 1;
     padding-left: 40px;
     padding-bottom: 48px;
     padding-top: 48px;
@@ -124,18 +157,22 @@ transition: color var(--transition);
     @include tab{
         display: none;
     }
+}
+.mob-menu.is-open{
+    opacity: 1;
+    visibility: visible;
+}
 
-}
-.close-btn-menu{
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    background-color: transparent;
-    border: none;
-    &:hover, &:focus{
-        fill: var(--accent-color)
-    }
-}
+// .close-btn-menu{
+//     position: absolute;
+//     right: 15px;
+//     top: 10px;
+//     background-color: transparent;
+//     border: none;
+//     &:hover, &:focus{
+//         fill: var(--accent-color)
+//     }
+// }
 .mob-menu-list__item{
     &:not(:last-child){
         margin-bottom: 32px;

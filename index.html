@@ -36,18 +36,22 @@
                 </svg>
                 +38 096 111 11 11</a></li>
         </ul>
-        <button type="button" class="open-btn-menu" data-menu-button >
+        <button 
+        type="button"
+        class="open-btn-menu "
+        aria-expanded="false"
+        aria-controls="menu"
+         data-menu-button >
             <svg class="open-menu__icon" width="40" height="40">
                 <use href="./images/icons.svg#icon-open_menu"></use>
             </svg>
-        </button>
-    </div>
-    <div class="mob-menu is-hidden" data-menu >
-        <button type="button" class="close-btn-menu" data-menu-close >
             <svg class="close-menu__icon" width="40" height="40">
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
+    </div>
+    <div class="mob-menu" data-menu >
+        
         <div class="container">
             <div class="mob-menu-top">
         <ul class="list mob-menu-list">
@@ -554,6 +558,7 @@
 <footer class="footer">
    
     <div class="container footer__container">
+        <div class="footer__cont-wrapper">
 <div class="footer-cont__item">
     <a href="" class="link logo">Web<span class="footer__logo">Studio</span></a>
     <address class="footer-address">
@@ -610,6 +615,7 @@
             </li>
         </ul>
       </div>
+    </div>
       <div class="footer-cont__item">
           <h2 class="footer-title">Подпишитесь на рассылку</h2>
           <form action="#" class="mailing-form">
