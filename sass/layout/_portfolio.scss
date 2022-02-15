@@ -1,6 +1,8 @@
 .filter-list{
     display: flex;
     margin-bottom: 50px;
+    margin-top: -15px;
+    margin-left: -8px;
     flex-wrap: wrap;
     justify-content: flex-start;
     @include tab{
@@ -8,11 +10,9 @@
     }
 
 }
-.filter-list__item:not(:last-child){
-    margin-right: 8px;
-}
 .filter-list__item{
-    margin-bottom: 15px;
+    margin-right: 8px;
+    margin-top: 15px;
     @include tab{
     margin-bottom: 0;
     }
@@ -55,6 +55,7 @@ box-shadow var(--transition);
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
+    flex-grow: 1;
 
     
 }
@@ -84,9 +85,10 @@ box-shadow var(--transition);
     &:focus .portfolio-list__hidden-text,
     &:hover .portfolio-list__hidden-text {
         transform: translateY(0);
+        opacity: 1;
     }
     
-    
+    height: 100%;
 }
 
 
@@ -123,4 +125,5 @@ box-shadow var(--transition);
     background: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
     transition: transform  var(--transition);
+    opacity: 0;
 }

@@ -37,12 +37,11 @@
                 +38 096 111 11 11</a></li>
         </ul>
         <button 
-        type="button" class="open-btn-menu" aria-expanded="false" aria-controls="menu" data-menu-button >
+        type="button"
+        class="open-btn-menu "
+         data-menu-open >
             <svg class="open-menu__icon" width="40" height="40">
                 <use href="./images/icons.svg#icon-open_menu"></use>
-            </svg>
-            <svg class="close-menu__icon" width="40" height="40">
-                <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
     </div>
@@ -50,13 +49,21 @@
         
         <div class="container">
             <div class="mob-menu-top">
+              <button 
+        type="button"
+        class="close-btn-menu"
+         data-menu-close >
+            <svg class="close-menu__icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
         <ul class="list mob-menu-list">
             <li class="mob-menu-list__item"><a href="index.html" class="link mob-menu-list__link current-link  ">Студия</a></li>
             <li class="mob-menu-list__item"><a href="portfolio.html" class="link mob-menu-list__link">Портфолио</a></li>
             <li class="mob-menu-list__item"><a href="" class="link mob-menu-list__link">Контакты</a></li>
          </ul>
         </div>
-        <div class="mob-menu-buttom">
+        <div class="mob-menu-bottom">
          <ul class="list mob-contact-list">
             <li class="mob-contact-list__item"><a href="tel:+380961111111" class="link mob-contact-list__tel">
                 
@@ -714,7 +721,7 @@
                     <svg class="policy-icon" width="15" height="15">
                         <use href="./images/icons.svg#icon-check"></use>
                     </svg>  
-                </span>Соглашаюсь с рассылкой и принимаю <a href="" class="link policy-link">Условия договора</a></label>
+                </span><span>Соглашаюсь с рассылкой и принимаю <a href="" class="link policy-link">Условия договора</a></span></label>
             </div>
             <div class="btn-field">
             <button type="submit" class="main-btn modal-button" >Отправить</button>

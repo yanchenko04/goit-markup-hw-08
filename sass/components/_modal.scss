@@ -16,8 +16,9 @@
     background-color:var(--light-background-color);
     // width: 528px;
     // min-height: 581px;
-    width: 450px;
-    height: 609px;
+    max-width: 450px;
+    width: 100%;
+    min-height: 609px;
     padding: 40px;
     top: 50%;
     left: 50%;
@@ -153,7 +154,7 @@ margin-bottom: 12px;
     letter-spacing: 0.03em;
     color: var(--text-color);
     display: flex;
-    text-align: center;
+    // text-align: center;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -180,14 +181,14 @@ margin-bottom: 12px;
 .policy-check:checked + .check-text .check-custom{
     border: 2px solid var(--dark-text-color);
   background-color:var(--accent-color);
-    &:hover,
-    &:focus{
-         border: 2px solid var(--accent-color)
-    }
 }
 .policy-check:checked + .check-text .policy-icon{
     fill: var(--light-text-color);
 }  
+.policy-check:hover + .check-text .check-custom,
+.policy-check:focus + .check-text .check-custom{
+    border: 2px solid var(--accent-color)
+}
 
 .policy-link{
     color: var(--accent-color);
